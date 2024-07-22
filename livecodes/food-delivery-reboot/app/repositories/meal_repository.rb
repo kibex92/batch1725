@@ -20,6 +20,15 @@ class MealRepository
     save_csv
   end
   
+  def all
+    @meals
+  end
+  
+  def find(id)
+    @meals.find { |meal| meal.id == id }
+  end
+
+
   private
 
   def load_csv

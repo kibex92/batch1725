@@ -16,4 +16,9 @@ class MealsController
     # 4. Send it to the repository
     @meal_repository.create(meal)
   end
+
+  def list
+    meals = @meal_repository.all
+    @meals_view.display(meals)
+  end
 end
