@@ -1,3 +1,4 @@
-require_relative "app/repositories/meal_repository"
+require_relative "app/repositories/employee_repository"
 
-p meal_repository = MealRepository.new(File.join(__dir__, "data/meals.csv"))
+employee_repository = EmployeeRepository.new(File.join(__dir__, "data/employees.csv"))
+p employee_repository.all
